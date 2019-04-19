@@ -1,0 +1,39 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+.burger-entry {
+  text-align: center;
+}
+.burger-submit-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+.burgers-to-eat {
+  float: left;
+  width: 50%;
+}
+.burgers-eaten {
+  float: left;
+  width: 50%;
+}
+.burger-headers {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 5px;
+}
+
+#burgers-to-eat-list {
+  /* float: left; */
+}
+
+#burgers-eaten-list {
+  /* float: right;   */
+}
