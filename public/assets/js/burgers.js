@@ -1,14 +1,12 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(document).on("click", ".burgers-to-eat-button", function(event) {
+    // update the database to indicate that the selected burger has been eaten
     var burgerID = $(this).attr("id");
-
-      alert("burgerID=" + burgerID);
     var newBurgerState = {
       devoured: 1
     };
-
-    // Mark the selected burger as having been devoured
+    // Send update to the server 
     $.ajax("/api/burgers/" + burgerID, {
       type: "PUT",
       data: newBurgerState

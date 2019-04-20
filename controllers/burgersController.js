@@ -1,5 +1,4 @@
 var express = require("express");
-
 var router = express.Router();
 
 // Import the model (burgers.js) to use its database functions.
@@ -17,7 +16,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-    console.log("Inserting new burger...");
+  console.log("Inserting new burger...");
   burger.insertOne(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
     // Send back the ID to be stored with the list item button for the burger
     console.log("/api/burgers Result=" + result.insertId);
