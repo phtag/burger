@@ -1,8 +1,9 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".devoured-button").on("click", function(event) {
-    var burgerID = $(this).data("id");
+  $(document).on("click", ".burgers-to-eat-button", function(event) {
+    var burgerID = $(this).attr("id");
 
+      alert("burgerID=" + burgerID);
     var newBurgerState = {
       devoured: 1
     };
@@ -10,15 +11,15 @@ $(function() {
     // Mark the selected burger as having been devoured
     $.ajax("/api/burgers/" + burgerID, {
       type: "PUT",
-      data: newSleepState
+      data: newBurgerState
     }).then(
       function() {
-        console.log("changed sleep to", newSleep);
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
+
   $(document).on("click", "#add-burger-button", function(event) {
     var newBurger = {
       burger_name: $("#burger-name").val(),
@@ -35,7 +36,6 @@ $(function() {
         location.reload();
       }
     );
-
   });
 
   var $addBurgerButton = $("#add-burger-button");
