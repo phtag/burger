@@ -8,7 +8,7 @@ This project uses Node.js, Express, MySQL and Handlebars to create an applicatio
 
 
 ### Burger Logger Page
-![Home page Screenshot](/images/burger-logger-screenshot.jpg)
+![Home page Screenshot](/public/assets/images/burger-logger-screenshot.jpg)
 
 NOTE: This project is referenced on my portfolio page at [my portfolio](https://phtag.github.io/Updated-portfolio/)
 
