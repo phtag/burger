@@ -8,10 +8,7 @@ This project uses Node.js, Express, MySQL and Handlebars to create an applicatio
 
 
 ### Burger Logger Page
-![Home page Screenshot](/images/Friends-Finder-HomePage-screenShot.jpg)
-
-### Survey Page of Friend-Finder
-![Survey Screenshot](/images/Friends-Finder-Survey-screenShot.jpg)
+![Home page Screenshot](/images/burger-logger-screenshot.jpg)
 
 NOTE: This project is referenced on my portfolio page at [my portfolio](https://phtag.github.io/Updated-portfolio/)
 
@@ -19,7 +16,7 @@ NOTE: This project is referenced on my portfolio page at [my portfolio](https://
 The purpose of this assignment was to learn how to integrate a node.js server using Express that services different routes from a web-based client. The server logic uses Handlebars to dynamically render web pages to the client.
 
 ### Getting Started
-To use the Burger Logger application, go to the Heruko link: https://sleepy-temple-45120.herokuapp.com/
+To use the Burger Logger application, go to the Heruko link: https://tranquil-beyond-68505.herokuapp.com/
 
 Start by entering burger names in the input text field. Click the "Add burger" button to add your named burger to the list of uneaten burgers on the left of the page.
 
